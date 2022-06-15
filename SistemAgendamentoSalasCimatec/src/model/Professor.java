@@ -1,5 +1,11 @@
 package model;
 
-public class Professor {
+import java.util.ArrayList;
 
+public class Professor extends Pessoa {
+	
+	private ArrayList<String> disciplinas;
+	
+	private String formacao;
+	
 }
