@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;model.Sala&apos; to &apos;Laboratorio&apos;&#x0A;- Original project: &apos;SistemAgendamentoSalasCimatec&apos;&#x0A;- Original element: &apos;model.Sala&apos;&#x0A;- Renamed element: &apos;model.Laboratorio&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Sala&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;model{Sala.java[Sala" matchStrategy="1" name="Laboratorio" qualified="false" references="true" similarDeclarations="false" stamp="1655256690394" textual="false" version="1.0"/>
-</session>
