@@ -1,4 +1,4 @@
-package br.senai.ds20221.agenda.gui;
+package br.senai.ds20221.agenda.view;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,9 +6,14 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JButton;
+import com.toedter.calendar.JYearChooser;
+import com.toedter.calendar.JDayChooser;
+import com.toedter.calendar.JMonthChooser;
+import com.toedter.calendar.JCalendar;
+import javax.swing.JMenuBar;
+import javax.swing.JMenuItem;
 
-public class Login extends JFrame {
+public class Agenda extends JFrame {
 
 	private JPanel contentPane;
 
@@ -19,7 +24,7 @@ public class Login extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Login frame = new Login();
+					Agenda frame = new Agenda();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -31,12 +36,22 @@ public class Login extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Login() {
+	public Agenda() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 691, 387);
+		
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+		
+		JMenuItem mntmNewMenuItem = new JMenuItem("Voltar");
+		menuBar.add(mntmNewMenuItem);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		JCalendar calendar = new JCalendar();
+		calendar.setBounds(50, 85, 600, 229);
+		contentPane.add(calendar);
 	}
 }

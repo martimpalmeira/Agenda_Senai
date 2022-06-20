@@ -12,5 +12,4 @@ public class Turma {
 	
 	private String turno;
 	
-	private ArrayList<Aluno> alunos;
 }

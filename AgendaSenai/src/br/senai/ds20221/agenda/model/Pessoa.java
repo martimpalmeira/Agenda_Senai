@@ -1,17 +1,19 @@
 package br.senai.ds20221.agenda.model;
 
+import java.util.Date;
+
 public abstract class Pessoa {
 	
 	private String nome;
 	
-	private int idade;
+	private Date dataDeNascimento;
 	
 	private String cpf;
 	
 
-	public Pessoa(String nome, int idade, String cpf) {
+	public Pessoa(String nome, Date dataDeNascimento, String cpf) {
 		this.nome = nome;
-		this.idade = idade;
+		this.dataDeNascimento = dataDeNascimento;
 		this.cpf = cpf;
 	}
 
@@ -23,12 +25,14 @@ public abstract class Pessoa {
 		this.nome = nome;
 	}
 
-	public int getIdade() {
-		return idade;
+	
+
+	public Date getDataDeNascimento() {
+		return dataDeNascimento;
 	}
 
-	public void setIdade(int idade) {
-		this.idade = idade;
+	public void setDataDeNascimento(Date dataDeNascimento) {
+		this.dataDeNascimento = dataDeNascimento;
 	}
 
 	public String getCpf() {
