@@ -29,6 +29,11 @@ public class Aluno extends Pessoa {
 	public void setTurma(Turma turma) {
 		this.turma = turma;
 	}
+
+	public void setVisible(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 	
 	

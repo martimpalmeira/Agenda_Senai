@@ -128,12 +128,6 @@ public class Login extends JFrame {
 		contentPane.add(btnEntrar);
 		btnEntrar.setBackground(new Color(100, 149, 237));
 
-		JLabel lblLogin = new JLabel("Login");
-		lblLogin.setBounds(258, 23, 49, 21);
-		contentPane.add(lblLogin);
-		lblLogin.setFont(new Font("Lucida Grande", Font.BOLD, 17));
-		lblLogin.setForeground(Color.WHITE);
-
 		JLabel lblNewLabel = new JLabel("Usuário");
 		lblNewLabel.setBounds(258, 80, 48, 16);
 		contentPane.add(lblNewLabel);
@@ -145,5 +139,11 @@ public class Login extends JFrame {
 		textSenha.setBackground(new Color(29, 79, 138));
 		textSenha.setBorder(new TitledBorder(null, "", TitledBorder.LEADING, TitledBorder.TOP, null, null));
 		contentPane.add(textSenha);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBorder(new TitledBorder(null, "Login", TitledBorder.LEADING, TitledBorder.TOP, null, Color.WHITE));
+		panel_1.setBounds(211, 24, 213, 248);
+		contentPane.add(panel_1);
+		panel_1.setBackground(new Color(58, 105, 173));
 	}
 }

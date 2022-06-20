@@ -6,14 +6,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import com.toedter.calendar.JYearChooser;
-import com.toedter.calendar.JDayChooser;
-import com.toedter.calendar.JMonthChooser;
-import com.toedter.calendar.JCalendar;
-import javax.swing.JMenuBar;
-import javax.swing.JMenuItem;
 
-public class Agenda extends JFrame {
+public class ListagemTurma extends JFrame {
 
 	private JPanel contentPane;
 
@@ -24,7 +18,7 @@ public class Agenda extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					Agenda frame = new Agenda();
+					ListagemTurma frame = new ListagemTurma();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,22 +30,13 @@ public class Agenda extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public Agenda() {
+	public ListagemTurma() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 691, 387);
-		
-		JMenuBar menuBar = new JMenuBar();
-		setJMenuBar(menuBar);
-		
-		JMenuItem mntmNewMenuItem = new JMenuItem("Voltar");
-		menuBar.add(mntmNewMenuItem);
+		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
-		contentPane.setLayout(null);
-		
-		JCalendar calendar = new JCalendar();
-		calendar.setBounds(50, 85, 600, 229);
-		contentPane.add(calendar);
 	}
+
 }
